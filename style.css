@@ -231,3 +231,17 @@ hr {
 .instagram:hover {
     color: #E1306C; /* Cor rosa/roxa oficial do Instagram */
 }
+/* Destaque para os preços do cardápio */
+.preco-produto {
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--cor-principal);
+    margin-top: 15px;
+}
+
+.preco-produto small {
+    font-size: 14px;
+    color: #71717a;
+    font-weight: 400;
+}
