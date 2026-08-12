@@ -78,7 +78,7 @@ header {
 
 /* Banner Principal (Hero) */
 .hero {
-    background: linear-gradient(rgba(69, 26, 3, 0.6), rgba(69, 26, 3, 0.6)), url('https://unsplash.com') no-repeat center center/cover;
+    background: #D2691E;
     height: 70vh;
     display: flex;
     justify-content: center;
