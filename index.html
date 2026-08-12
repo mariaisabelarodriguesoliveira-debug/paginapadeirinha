@@ -3,101 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paderinha - Padaria Online em Piracicaba</title>
+
+    <title>Padeirinha | Salgados e Doces</title>
+
     <link rel="stylesheet" href="style.css">
-    <!-- LINK CORRIGIDO: Biblioteca oficial estável para carregar os ícones de redes sociais -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <!-- Link para carregar a fonte moderna do Google -->
-    <link href="https://googleapis.com" rel="stylesheet">
 </head>
+
 <body>
 
-    <!-- Cabeçalho / Menu -->
-    <header>
-        <div class="container header-flex">
-            <div class="logo">🥖 Padeirinha</div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#cardapio">Cardápio</a></li>
-                    <li><a href="#sobre">Sobre Nós</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+        <div class="logo">
+            <div class="icone-logo">🥐</div>
+
+            <div>
+                <h1>Padeirinha</h1>
+                <p>Salgados e doces</p>
+            </div>
         </div>
+
+        <p class="frase">
+            Feito com carinho para deixar seu dia mais gostoso! 💕
+        </p>
     </header>
 
-    <!-- Banner Principal -->
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h1>O pão mais quentinho de Piracicaba</h1>
-            <p>Peça online e receba na sua casa com todo o carinho e sabor artesanal.</p>
-            <a href="#cardapio" class="btn">Ver Cardápio</a>
-        </div>
+
+    <!-- BOTÃO PARA WHATSAPP -->
+    <section class="pedido-topo">
+        <a href="https://wa.me/5519992311602" target="_blank">
+            📲 Fazer pedido pelo WhatsApp
+        </a>
     </section>
 
-    <!-- Seção do Cardápio Digital (Atualizada) -->
-    <section id="cardapio" class="container section">
-        <h2 class="section-title">Nosso Cardápio Digital</h2>
-        <div class="grid-produtos">
-            <!-- Item 1: Coxinha -->
-            <div class="card-produto">
-                <span class="emoji-produto">🍗</span>
-                <h3>Coxinha/Salgados</h3>
-                <p>Massa leve de batata com recheio super desfiado e temperado.</p>
-                <span class="preco-produto">R$ 50,00 <small>/ cento</small></span>
-            </div>
 
-            <!-- Item 2: Pudim -->
-            <div class="card-produto">
-                <span class="emoji-produto">🍮</span>
-                <h3>Pudim de Leite Condensado</h3>
-                <p>Super cremoso, lisinho e com aquela calda de caramelo artesanal.</p>
-                <span class="preco-produto">R$ 40,00 <small>/ unidade</small></span>
-            </div>
+    <!-- CARDÁPIO -->
+    <main>
 
-            <!-- Item 3: Pão Francês -->
-            <div class="card-produto">
-                <span class="emoji-produto">🍞</span>
-                <h3>Pão Francês</h3>
-                <p>Sempre quentinho, crocante por fora e muito macio por dentro.</p>
-                <span class="preco-produto">R$ 1,00 <small>/ unidade</small></span>
-            </div>
+        <div class="titulo-cardapio">
+            <span>♡</span>
+            <h2>Nosso Cardápio</h2>
+            <span>♡</span>
         </div>
+
+
+        <!-- SALGADOS FRITOS -->
+        <section class="categoria">
+
+            <h3>🥟 Salgados Fritos</h3>
+
+            <div class="produtos">
+
+                <div class="produto">
+                    <div class="foto">🥟</div>
+
+                    <div class="informacoes">
+                        <h4>Coxinha</h4>
+                        <p>Deliciosa coxinha recheada.</p>
+                        <strong>R$ 5,00</strong>
+                    </div>
+                </div>
+
+
+                <div class="produto">
+                    <div class="foto">🧀</div>
+
+                    <div class="informacoes">
+                        <h4>Bolinha de queijo</h4>
+                        <p>Crocante por fora e cremosa por dentro.</p>
+                        <strong>R$ 5,00</strong>
+                    </div>
+                </div>
+
+
+                <div class="produto">
+                    <div class="foto">🥠</div>
+
+                    <div class="informacoes">
+                        <h4>Risoles</h4>
+                        <p>Risoles recheado e bem crocante.</p>
+                        <strong>R$ 5,00</strong>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- SALGADOS ASSADOS -->
+        <section class="categoria">
+
+            <h3>🥐 Salgados Assados</h3>
+
+            <div class="produtos">
+
+                <div class="produto">
+                    <div class="foto">🥐</div>
+
+                    <div class="informacoes">
+                        <h4>Esfiha</h4>
+                        <p>Esfiha assada com recheio saboroso.</p>
+                        <strong>R$ 6,00</strong>
+                    </div>
+                </div>
+
+
+                <div class="produto">
+                    <div class="foto">🥧</div>
+
+                    <div class="informacoes">
+                        <h4>Empada</h4>
+                        <p>Massa macia com recheio delicioso.</p>
+                        <strong>R$ 6,00</strong>
+                    </div>
+                </div>
+
+
+                <div class="produto">
+                    <div class="foto">🍕</div>
+
+                    <div class="informacoes">
+                        <h4>Mini pizza</h4>
+                        <p>Mini pizza assada com queijo e molho.</p>
+                        <strong>R$ 7,00</strong>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- PUDINS -->
+        <section class="categoria">
+
+            <h3>🍮 Pudins</h3>
+
+            <div class="produtos">
+
+                <div class="produto">
+                    <div class="foto">🍮</div>
+
+                    <div class="informacoes">
+                        <h4>Pudim tradicional</h4>
+                        <p>Pudim cremoso com calda de caramelo.</p>
+                        <strong>R$ 10,00</strong>
+                    </div>
+                </div>
+
+
+                <div class="produto">
+                    <div class="foto">🍮</div>
+
+                    <div class="informacoes">
+                        <h4>Pudim de leite</h4>
+                        <p>Clássico, cremoso e delicioso.</p>
+                        <strong>R$ 10,00</strong>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- BOLOS -->
+        <section class="categoria">
+
+            <h3>🍰 Bolos</h3>
+
+            <div class="produtos">
+
+                <div class="produto">
+                    <div class="foto">🍫</div>
+
+                    <div class="informacoes">
+                        <h4>Bolo de chocolate</h4>
+                        <p>Bolo fofinho com muito chocolate.</p>
+                        <strong>R$ 30,00</strong>
+                    </div>
+                </div>
+
+
+                <div class="produto">
+                    <div class="foto">🥥</div>
+
+                    <div class="informacoes">
+                        <h4>Bolo de coco</h4>
+                        <p>Bolo macio com sabor delicioso de coco.</p>
+                        <strong>R$ 30,00</strong>
+                    </div>
+                </div>
+
+
+                <div class="produto">
+                    <div class="foto">🍓</div>
+
+                    <div class="informacoes">
+                        <h4>Bolo de morango</h4>
+                        <p>Delicioso bolo com recheio de morango.</p>
+                        <strong>R$ 35,00</strong>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- DOCES -->
+        <section class="categoria">
+
+            <h3>🍬 Doces</h3>
+
+            <div class="produtos">
+
+                <div class="produto">
+                    <div class="foto">🍫</div>
+
+                    <div class="informacoes">
+                        <h4>Brigadeiro</h4>
+                        <p>Brigadeiro tradicional.</p>
+                        <strong>R$ 3,50</strong>
+                    </div>
+                </div>
+
+
+                <div class="produto">
+                    <div class="foto">🍓</div>
+
+                    <div class="informacoes">
+                        <h4>Morango com chocolate</h4>
+                        <p>Morango coberto com chocolate.</p>
+                        <strong>R$ 7,00</strong>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- CONTATO -->
+    <section class="contato">
+
+        <h2>Faça seu pedido! 💕</h2>
+
+        <p>Entre em contato com a Padeirinha:</p>
+
+        <a href="https://wa.me/5519992311602" target="_blank">
+            📱 (19) 9923-11602
+        </a>
+
+        <a href="https://www.instagram.com/padeirinha_" target="_blank">
+            📷 @padeirinha_
+        </a>
+
     </section>
 
-    <!-- Seção Sobre -->
-    <section id="sobre" class="sobre-bg">
-        <div class="container section text-center">
-            <h2 class="section-title">Sobre a Paderinha</h2>
-            <p class="txt-sobre">Nascida no coração de Piracicaba, a Paderinha tem o compromisso de levar o verdadeiro sabor do pão e dos doces artesanais para a sua mesa. Usamos ingredientes selecionados e muito amor em cada receita para garantir a melhor experiência para você e sua família.</p>
-        </div>
-    </section>
 
-    <!-- Rodapé / Contato -->
-    <footer id="contato">
-        <div class="container text-center">
-            <h2>Faça seu Pedido</h2>
-            <p>📍 Piracicaba - SP</p>
-            <p>📞 WhatsApp: (19) 99231-1602</p>
-            <p class="horario">Abertos todos os dias das 06h às 20h</p>
-            
-            <!-- Botões das Redes Sociais com Ícones Clicáveis -->
-            <div class="redes-sociais">
-                <!-- Link direto para o WhatsApp -->
-                <a href="https://wa.me" target="_blank" class="btn-rede whatsapp" aria-label="Falar no WhatsApp">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
-                
-                <!-- Link direto para o Instagram -->
-                <a href="https://instagram.com/padeirinha_" target="_blank" class="btn-rede instagram" aria-label="Seguir no Instagram">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-            </div>
-
-            <hr>
-            <p class="copy">&copy; 2026 Paderinha. Todos os direitos reservados.</p>
-        </div>
+    <!-- RODAPÉ -->
+    <footer>
+        <p>© 2026 Padeirinha — Salgados e Doces</p>
+        <p>Feito com carinho 💕</p>
     </footer>
 
 </body>
