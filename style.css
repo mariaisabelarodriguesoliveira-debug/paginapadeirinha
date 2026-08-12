@@ -205,3 +205,29 @@ hr {
         font-size: 30px;
     }
 }
+/* Ajuste dos ícones clicáveis no rodapé */
+.redes-sociais {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-rede {
+    font-size: 32px;
+    color: #fef3c7; /* Cor creme padrão */
+    text-decoration: none;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.btn-rede:hover {
+    transform: scale(1.2); /* Aumenta o tamanho ao passar o mouse */
+}
+
+.whatsapp:hover {
+    color: #25D366; /* Cor verde oficial do WhatsApp */
+}
+
+.instagram:hover {
+    color: #E1306C; /* Cor rosa/roxa oficial do Instagram */
+}
