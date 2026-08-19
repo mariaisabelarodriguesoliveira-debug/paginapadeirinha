@@ -1,9 +1,15 @@
+/* ========================= */
 /* CONFIGURAÇÕES GERAIS */
+/* ========================= */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -13,13 +19,17 @@ body {
 }
 
 
+/* ========================= */
 /* CABEÇALHO */
+/* ========================= */
 
 .cabecalho {
     background: linear-gradient(135deg, #df8b83, #efaaa0);
     color: white;
     text-align: center;
+
     padding: 35px 20px 30px;
+
     border-radius: 0 0 35px 35px;
 }
 
@@ -27,13 +37,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
     gap: 12px;
 }
 
 .icone-logo {
     background-color: white;
+
     width: 65px;
     height: 65px;
+
     border-radius: 50%;
 
     display: flex;
@@ -45,25 +58,32 @@ body {
 
 .logo h1 {
     font-family: Georgia, serif;
+
     font-size: 34px;
+
     margin-bottom: 2px;
 }
 
 .logo p {
     font-size: 15px;
+
     letter-spacing: 1px;
 }
 
 .frase {
     margin-top: 20px;
+
     font-size: 15px;
 }
 
 
-/* BOTÃO DO WHATSAPP */
+/* ========================= */
+/* BOTÃO WHATSAPP */
+/* ========================= */
 
 .pedido-topo {
     text-align: center;
+
     margin: 25px 20px;
 }
 
@@ -74,9 +94,11 @@ body {
     color: white;
 
     padding: 14px 25px;
+
     border-radius: 30px;
 
     text-decoration: none;
+
     font-weight: bold;
 
     box-shadow: 0 5px 15px rgba(150, 90, 80, 0.2);
@@ -89,12 +111,16 @@ body {
 }
 
 
+/* ========================= */
 /* TÍTULO DO CARDÁPIO */
+/* ========================= */
 
 .titulo-cardapio {
     display: flex;
+
     justify-content: center;
     align-items: center;
+
     gap: 15px;
 
     margin: 35px 20px 25px;
@@ -102,46 +128,140 @@ body {
 
 .titulo-cardapio h2 {
     font-family: Georgia, serif;
+
     color: #c66f69;
+
     font-size: 28px;
 }
 
 .titulo-cardapio span {
     color: #df8b83;
+
     font-size: 25px;
 }
 
 
+/* ========================= */
 /* CATEGORIAS */
+/* ========================= */
 
 .categoria {
     max-width: 900px;
-    margin: 0 auto 35px;
+
+    margin: 0 auto 15px;
+
     padding: 0 20px;
 }
 
-.categoria h3 {
-    font-family: Georgia, serif;
+
+/* ========================= */
+/* BOTÃO DA CATEGORIA */
+/* ========================= */
+
+.botao-categoria {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: white;
+
+    border: 2px solid #f1d3ce;
+
+    border-radius: 16px;
+
+    padding: 17px 18px;
+
     color: #c66f69;
 
-    font-size: 23px;
+    font-family: Georgia, serif;
 
-    margin-bottom: 15px;
+    font-size: 21px;
 
-    border-bottom: 2px solid #f1d3ce;
-    padding-bottom: 8px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    text-align: left;
+
+    transition: 0.3s;
+}
+
+.botao-categoria:hover {
+    background-color: #fff0ed;
+}
+
+.botao-categoria:active {
+    transform: scale(0.99);
+}
+
+.seta {
+    font-family: Arial, sans-serif;
+
+    font-size: 25px;
+
+    transition: transform 0.3s;
 }
 
 
+/* Categoria aberta */
+
+.categoria.aberta .botao-categoria {
+    border-radius: 16px 16px 8px 8px;
+
+    background-color: #fff0ed;
+}
+
+.categoria.aberta .seta {
+    transform: rotate(180deg);
+}
+
+
+/* ========================= */
 /* PRODUTOS */
+/* ========================= */
 
 .produtos {
     display: grid;
 
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(280px, 1fr)
+    );
 
     gap: 15px;
+
+    max-height: 0;
+
+    overflow: hidden;
+
+    opacity: 0;
+
+    padding: 0;
+
+    transition:
+        max-height 0.45s ease,
+        opacity 0.3s ease,
+        padding 0.3s ease;
 }
+
+
+/* Produtos aparecem quando categoria abre */
+
+.categoria.aberta .produtos {
+    max-height: 3000px;
+
+    opacity: 1;
+
+    padding: 15px 0 5px;
+}
+
+
+/* ========================= */
+/* PRODUTO */
+/* ========================= */
 
 .produto {
     background-color: white;
@@ -153,11 +273,13 @@ body {
     padding: 12px;
 
     display: flex;
+
     align-items: center;
 
     gap: 15px;
 
-    box-shadow: 0 4px 12px rgba(120, 80, 70, 0.08);
+    box-shadow:
+        0 4px 12px rgba(120, 80, 70, 0.08);
 
     transition: 0.3s;
 }
@@ -167,10 +289,13 @@ body {
 }
 
 
-/* ESPAÇO DA FOTO */
+/* ========================= */
+/* FOTO */
+/* ========================= */
 
 .foto {
     min-width: 90px;
+
     width: 90px;
     height: 90px;
 
@@ -179,14 +304,31 @@ body {
     border-radius: 15px;
 
     display: flex;
+
     align-items: center;
     justify-content: center;
 
     font-size: 48px;
+
+    overflow: hidden;
 }
 
 
-/* INFORMAÇÕES DO PRODUTO */
+/* Quando colocarmos fotos reais */
+
+.foto img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* ========================= */
+/* INFORMAÇÕES */
+/* ========================= */
 
 .informacoes {
     flex: 1;
@@ -194,6 +336,7 @@ body {
 
 .informacoes h4 {
     color: #684949;
+
     font-size: 17px;
 
     margin-bottom: 5px;
@@ -201,6 +344,7 @@ body {
 
 .informacoes p {
     color: #917777;
+
     font-size: 13px;
 
     line-height: 1.4;
@@ -210,11 +354,14 @@ body {
 
 .informacoes strong {
     color: #c66f69;
+
     font-size: 17px;
 }
 
 
+/* ========================= */
 /* CONTATO */
+/* ========================= */
 
 .contato {
     background-color: #f5d8d3;
@@ -251,7 +398,9 @@ body {
 }
 
 
+/* ========================= */
 /* RODAPÉ */
+/* ========================= */
 
 footer {
     background-color: #c97872;
@@ -268,7 +417,9 @@ footer {
 }
 
 
+/* ========================= */
 /* CELULAR */
+/* ========================= */
 
 @media (max-width: 600px) {
 
@@ -288,15 +439,35 @@ footer {
         padding: 0 15px;
     }
 
+    .botao-categoria {
+        font-size: 19px;
+
+        padding: 15px;
+    }
+
     .produto {
         padding: 10px;
     }
 
     .foto {
         min-width: 75px;
+
         width: 75px;
         height: 75px;
+
         font-size: 40px;
+    }
+
+    .informacoes h4 {
+        font-size: 16px;
+    }
+
+    .informacoes p {
+        font-size: 12px;
+    }
+
+    .informacoes strong {
+        font-size: 16px;
     }
 
 }
